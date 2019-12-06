@@ -20,7 +20,7 @@ inputs:
         type: File[]
         inputBinding:
             prefix: --genotype
-            position: 1
+            position: 100
         doc: "Array of bams to run through lumpy, can be single or small cohort" 
     cohort_name:
         type: string?
