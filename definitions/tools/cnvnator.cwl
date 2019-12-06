@@ -7,6 +7,7 @@ label: "Run CNVnator to calculate copy number variations in WGS samples"
 arguments: ["source", "/opt/root/bin/thisroot.sh", { shellQuote: false, valueFrom: "&&" },  "/bin/bash", "run_cnvnator.sh"]
 
 requirements:
+    - class: InlineJavascriptRequirement
     - class: DockerRequirement
       dockerPull: "mgibio/cnvnator-cwl:0.4"
     - class: ResourceRequirement

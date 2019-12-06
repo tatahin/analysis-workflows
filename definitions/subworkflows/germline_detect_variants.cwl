@@ -4,6 +4,8 @@ cwlVersion: v1.0
 class: Workflow
 label: "exome alignment and germline variant detection"
 requirements:
+    - class: InlineJavascriptRequirement
+    - class: StepInputExpressionRequirement
     - class: SubworkflowFeatureRequirement
     - class: SchemaDefRequirement
       types:

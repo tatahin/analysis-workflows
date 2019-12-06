@@ -9,6 +9,7 @@ arguments: [
     "/usr/bin/tabix", "-p", "vcf"
 ]
 requirements:
+    - class: StepInputExpressionRequirement
     - class: ShellCommandRequirement
     - class: DockerRequirement
       dockerPull: "mgibio/samtools-cwl:1.0.0"

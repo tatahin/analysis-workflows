@@ -5,6 +5,7 @@ class: CommandLineTool
 label: "Insert an arbitrary string at a specific line of a file"
 baseCommand: ["awk"]
 requirements:
+    - class: StepInputExpressionRequirement
     - class: DockerRequirement
       dockerPull: 'ubuntu:xenial'
     - class: ResourceRequirement

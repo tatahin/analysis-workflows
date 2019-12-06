@@ -4,6 +4,7 @@ cwlVersion: v1.0
 class: Workflow
 label: "Apply filters to VCF file"
 requirements:
+    - class: StepInputExpressionRequirement
     - class: SubworkflowFeatureRequirement
     - class: StepInputExpressionRequirement
 inputs:

@@ -5,6 +5,8 @@ class: CommandLineTool
 label: "Insert an arbitrary string at a specific line of a gzipped file"
 baseCommand: ["zcat"]
 requirements:
+
+    - class: StepInputExpressionRequirement
     - class: ShellCommandRequirement
     - class: DockerRequirement
       dockerPull: "mgibio/samtools-cwl:1.0.0"

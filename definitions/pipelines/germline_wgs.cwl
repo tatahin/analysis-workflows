@@ -4,6 +4,7 @@ cwlVersion: v1.0
 class: Workflow
 label: "wgs alignment and germline variant detection"
 requirements:
+    - class: StepInputExpressionRequirement
     - class: SchemaDefRequirement
       types:
           - $import: ../types/labelled_file.yml
